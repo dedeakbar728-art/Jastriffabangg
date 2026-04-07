@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jastriff Abang | Thrift & Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JASTRIFF <span>ABANG</span></div>
+        <div class="cart-btn" onclick="toggleCart()">
+            🛒 Keranjang (<span id="cart-count">0</span>)
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Koleksi Pilihan Abang</h1>
+        <p>Barang Branded, Harga Teman, Kualitas Juara.</p>
+    </header>
+
+    <main class="container">
+        <div class="product-grid" id="product-list">
+            </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Pesanan Anda</h2>
+            <div id="cart-items"></div>
+            <div class="total-price">Total: Rp <span id="total-amount">0</span></div>
+            
+            <div class="form-order">
+                <input type="text" id="buyer-name" placeholder="Nama Lengkap">
+                <textarea id="buyer-address" placeholder="Alamat Lengkap Pengiriman"></textarea>
+                <select id="payment-method">
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="E-Wallet (DANA/OVO)">E-Wallet (DANA/OVO)</option>
+                    <option value="COD">COD (Bayar di Tempat)</option>
+                </select>
+                <button class="btn-checkout" onclick="sendToWhatsApp()">Kirim Pesanan ke WhatsApp</button>
+                <button class="btn-close" onclick="toggleCart()">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jastriff Abang. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
